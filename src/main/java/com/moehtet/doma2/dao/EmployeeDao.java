@@ -1,5 +1,7 @@
 package com.moehtet.doma2.dao;
 
+import java.util.List;
+
 import org.seasar.doma.Dao;
 import org.seasar.doma.Select;
 
@@ -11,4 +13,7 @@ public interface EmployeeDao {
 	
 	@Select
 	Employee getEmployeeById(Integer employeeId);
+	
+	@Select
+	List<Employee> selectAll();
 }

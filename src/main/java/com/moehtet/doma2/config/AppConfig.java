@@ -21,7 +21,7 @@ public class AppConfig implements Config{
 	
 	private final TransactionManager transactionManager;
 	
-	public AppConfig() {
+	private AppConfig() {
 		dialect = new PostgresDialect();
 		dataSource = new LocalTransactionDataSource(JdbcConstants.URL, JdbcConstants.USERNAME, JdbcConstants.PASSWORD);
 		transactionManager = new LocalTransactionManager(
@@ -44,7 +44,7 @@ public class AppConfig implements Config{
 		return transactionManager;
 	}
 	
-	public static AppConfig getInstance() {
+	public static AppConfig singleton() {
 		return CONFIG;
 	}
 }

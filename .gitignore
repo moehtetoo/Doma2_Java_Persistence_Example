@@ -22,3 +22,5 @@ hs_err_pid*
 .project
 target/classes/
 .settings/
+.factorypath
+.apt_generated/

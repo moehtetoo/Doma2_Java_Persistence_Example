@@ -1,1 +1,0 @@
-SELECT /*entity*/* FROM EMPLOYEE WHERE employeeId = /*employeeId */ 99
